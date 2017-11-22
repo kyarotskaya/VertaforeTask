@@ -10,28 +10,29 @@ $hover-grey: #797777;
 *{
     box-sizing: border-box;
 }
+
 html{
     height: 100%;
 }
+
 body{
     height: 100%;
     font-family: Arial;
     font-size: 14px;
     text-transform: uppercase;
 }
+
 .header{
     height: 100px;
-        &__main-nav {
+        &__main-nav{
             height: 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             background-color: $nav-grey;
             padding: 0 20px;
+
                 .pop-up{
-                    &_disabled{
-                        display: none;
-                    }
                     position: absolute;
                     top: 40px;
                     left: 20px;
@@ -39,6 +40,7 @@ body{
                     background-color: $light-grey;
                     border: $black-border;
                     text-transform: none;
+
                         &:before{
                             content: ' ';
                             display: inline-block;
@@ -51,6 +53,11 @@ body{
                             border-width: 0 1.5px 1.5px 0;
                             transform: rotate(-135deg);
                         }
+
+                        &_disabled{
+                            display: none;
+                        }
+
                         &__nav{
                             display: flex;
                             justify-content: space-between;
@@ -68,17 +75,21 @@ body{
                                     text-transform: uppercase;
                                 }
                         }
+
                         &__period{
                             display: flex;
                             width: 100%;
                             text-transform: uppercase;
+
                                 li{
                                     margin-right: 20px;
                                     padding: 7px;
                                     cursor: pointer;
+
                                     &:last-child{
                                         margin-right: 0;
                                     }
+
                                     &:hover{
                                         color: #ffffff;
                                         background-color: $hover-grey;
@@ -86,11 +97,14 @@ body{
                                     }
                                 }
                         }
+
                         .todo-item{
                             border-bottom: $black-border;
+
                             &:last-child{
                                 border-bottom: none;
                             }
+
                                 &__outer{
                                     display: flex;
                                     height: 70px;
@@ -98,24 +112,30 @@ body{
                                     align-items: center; 
                                     cursor: pointer;   
                                 }
+
                                     &__icon{
                                         margin-right: 20px;
                                     }
+
                                     &__content{
                                         margin-right: 125px;
+
                                             a{
                                                 display: inline-block;
                                                 margin-bottom: 10px;
                                                 text-decoration: none;
                                                 color: black;
                                             }
+
                                             p{
                                                 color: $text-grey;
                                             }
                                     }
+
                                 &__timestamp{
                                     text-transform: uppercase;
                                 }
+
                                 &__inner{
                                     padding: 10px 30px;
                                     background-color: $client-grey;
@@ -123,15 +143,18 @@ body{
                                     font-size: 12px;
                                     line-height: 20px;
                                 }
+
                                 &_enabled{
                                     display: flex;
                                 }
+
                                     &__fieldname{
                                         margin-right: 10px;
                                         text-align: right;
                                         color: $text-grey;
                                     }
                         }
+
                     &__task-counter{
                         position: absolute;
                         top: 100.5%;
@@ -148,19 +171,23 @@ body{
                     }
                 }
         }
+
             &__left-nav, &__right-nav {
                 display: flex;
                     li{
                         margin-right: 30px;
                         cursor: pointer;
+
                             &:last-child{
                                 margin-right: 0;
                             }
                     }
             }
+
             &__nav-image{
                 color: $text-grey
             }
+
         &__client-header{
             display: flex;
             justify-content: center;
@@ -170,25 +197,31 @@ body{
             color: $text-grey;
         }
 }
+
 .wrapper{
     background-color: $light-grey;
 }
+
 .container{
     display: flex;
     border-top: $border;
     height: calc(100% - 100px);
+
         .sidebar{
             min-width: 300px;
             border-right: $black-border;
             text-align: center;
             padding-top: 20px;
         }
+
         .content{
             width: 100%;
+
                 .file-view{
                     height: 75%;
                     text-align: center;
                 }
+
                 &__nav{
                     padding: 10px 0;
                     border-top: $border;
@@ -196,6 +229,7 @@ body{
                     text-align: center;
                     background-color: $nav-grey;
                 }
+                
                 span{
                     display: inline-block;
                     padding: 10px;
