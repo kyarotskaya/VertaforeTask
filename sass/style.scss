@@ -50,7 +50,6 @@ body{
                             border: solid rgb(75, 72, 72);
                             border-width: 0 1.5px 1.5px 0;
                             transform: rotate(-135deg);
-                            // -webkit-transform: rotate(-135deg);
                         }
                         &__nav{
                             display: flex;
@@ -172,15 +171,12 @@ body{
         }
 }
 .wrapper{
-    // width: 1024px;
-    // margin: 0 auto;
     background-color: $light-grey;
 }
 .container{
     display: flex;
     border-top: $border;
-    // height: 600px;
-    height: 100%;
+    height: calc(100% - 100px);
         .sidebar{
             min-width: 300px;
             border-right: $black-border;
@@ -189,7 +185,6 @@ body{
         }
         .content{
             width: 100%;
-            height: 100%;
                 .file-view{
                     height: 75%;
                     text-align: center;
